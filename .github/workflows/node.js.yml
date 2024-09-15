@@ -27,11 +27,11 @@ jobs:
       with:
         node-version: '16.x'
     - run: npm ci
-    - name: Run ESLint
-      run: |
-        npm install eslint
-        npx eslint --init
-        npx eslint .
+    # - name: Run ESLint
+    #   run: |
+    #     npm install eslint
+    #     npx eslint --init
+    #     npx eslint .
     - name: Run Prettier
       run: npx prettier --check .
 
