@@ -50,7 +50,7 @@ jobs:
         run: npm audit --audit-level=moderate
 
   build-and-test:
-    needs: [security-scan, code-quality, dependency-check]
+    needs: [code-quality, dependency-check]
     runs-on: ubuntu-latest
     strategy:
       matrix:
